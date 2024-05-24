@@ -1,0 +1,625 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-left, .header-center, .header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-link {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  margin-right: 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+  letter-spacing: 2px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-icon {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.header-icon img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  .header-left, .header-right {
+      justify-content: space-between;
+      width: 100%;
+  }
+  .header-center {
+      margin: 10px 0;
+      justify-content: center;
+      width: 100%;
+  }
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  z-index: 1001;
+  position: relative;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content h2 {
+  margin-bottom: 20px;
+}
+
+.modal-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #f1f1f1;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.tab:hover, .tab.active {
+  background-color: #ddd;
+}
+
+.form-content {
+  display: none;
+}
+
+.form-content.active {
+  display: block;
+}
+
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content label {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.modal-content input {
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.btn {
+  padding: 12px 24px;
+  background-color: #D14836;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ff6a36;
+}
+
+/* Search Bar Styles */
+.search-bar {
+  display: none; /* Initially hide the search bar */
+  position: absolute;
+  top: 50px; /* Adjust the top value as needed to position near the header */
+  right: 20px; /* Adjust the right value as needed to position near the header */
+  background-color: #ffffff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  z-index: 1000;
+}
+
+.search-bar input {
+  width: 200px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.close-search {
+  background-color: #D14836;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+
+/* Video Section Styles */
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.hero-content h1 {
+  font-size: 3.1rem;
+  margin-bottom: 20px;
+  opacity: 0.5;
+}
+
+.hero-content p {
+  font-size: 1.21rem;
+  margin-bottom: 20px;
+}
+
+.hero-content .btn {
+  padding: 12px 24px;
+  background-color: #D14836;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.hero-content .btn:hover {
+  background-color: #ff6a36;
+}
+
+
+  
+/* Product Highlights Section */
+.product-highlights {
+  padding: 20px 0;
+  background-color: #fff8f9; /* Baby pink background color */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.highlight {
+  width: 30%; /* Adjust as needed */
+  text-align: center;
+  color: #555555;
+  flex: 0 0 50%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.highlight-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.highlight h3 {
+  margin-top: 10px;
+}
+
+.highlight p {
+  margin-bottom: 20px;
+  color: #555555;
+}
+
+.highlight-image {
+  width: 100%;
+  height: 100%; /* Set height to 100% to fill the container */
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover; /* Ensure the image covers the entire container */
+  object-position: center; /* Center the image */
+  transition: transform 0.3s ease; /* Add a transition for smooth animation */
+}
+
+.highlight-image:hover {
+  transform: scale(1.05); /* Slightly enlarge the image on hover */
+}
+
+/* Force 1440x2160 aspect ratio */
+@media (min-width: 1440px) {
+  .highlight-image {
+      aspect-ratio: 2 / 4; /* 1440x2160 aspect ratio */
+  }
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #fff8f9; /* Light background color */
+    padding: 50px 0; /* Add padding for spacing */
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .testimonial {
+    width: 300px; /* Adjust as needed */
+    margin: 20px; /* Add margin for spacing between testimonials */
+    padding: 20px; /* Add padding for content spacing */
+    background-color: #ffffff; /* Testimonial background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
+    text-align: center;
+  }
+  
+  .testimonial img {
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    border-radius: 50%; /* Rounded image */
+    margin-bottom: 20px; /* Add margin for spacing between image and text */
+  }
+  
+  .testimonial p {
+    font-size: 16px; /* Adjust as needed */
+    line-height: 1.5; /* Adjust line height for readability */
+    color: #555555; /* Testimonial text color */
+  }
+  
+  .testimonial cite {
+    font-style: italic; /* Italicize author's name */
+    color: #999999; /* Author's name color */
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* USP Section Styles */
+.usp {
+  background-color: #fff8f9; /* Lighter background for the entire section */
+  padding: 50px 0; /* Adjust padding as needed */
+  text-align: center; /* Aligns text center for the entire section */
+}
+
+.usp-title {
+  margin: 0 auto 30px; /* Center the title horizontally and add space at the bottom */
+  color: #333; /* Title color */
+  max-width: 80%; /* Set a maximum width to prevent it from taking up the entire row */
+}
+
+.usp-reasons {
+  display: flex; /* Makes USP items display horizontally */
+  justify-content: center; /* Centers items horizontally */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+.usp-item {
+  width: calc(17% - 10px); /* Calculates width based on flexbox model */
+  text-align: center; /* Centers text within each box */
+  margin: 5px;
+}
+
+.usp-text-box {
+  background-color: #c75151; /* Gray background for individual boxes */
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+  transition: transform 0.2s ease-in-out; /* Adds hover effect transition */
+}
+
+.usp-item:hover .usp-text-box {
+  transform: scale(1.03); /* Slight scale on hover */
+}
+
+.usp-item h3 {
+  margin-bottom: 5px;
+  font-size: 1.2em;
+}
+
+.usp-icon { /* Optional: Style the icons if needed */
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+  
+.engaging-content {
+  background-color: #fff8f9;
+  padding: 20px;
+  text-align: center;
+  color: #555555; /* Center align the section */
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 2em;
+  text-align: center; /* Center the "Fashion Finds" text */
+}
+
+.content-items {
+  display: flex; /* Makes content items display horizontally */
+  flex-wrap: wrap; /* Allows items to wrap to multiple lines if needed */
+  justify-content: center; /* Center align the items horizontally */
+}
+
+.content-item {
+  width: calc(30% - 20px); /* Adjust width to fit three items in a row */
+  margin: 10px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.2s ease-in-out; /* Adds hover effect transition */
+}
+
+.content-item:hover {
+  transform: scale(1.05); /* Applies slight scale on hover */
+}
+
+.content-item img {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+p {
+  line-height: 1.5;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+  
+ /* Interactive Elements Section Styles */
+.interactive-elements {
+  background-color: #fff8f9;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.interactive-items {
+  display: flex;
+  justify-content: space-around;
+}
+
+.interactive-item {
+  width: 30%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.interactive-item:hover {
+  transform: translateY(-10px);
+}
+
+.interactive-content {
+  padding: 17px;
+}
+
+.interactive-content h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.interactive-content p {
+  color: #666;
+}
+
+.interactive-content .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #c75151;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.interactive-content .btn:hover {
+  background-color: #af4444;
+}
+
+.quiz {
+  background-color: #f9fbe7;
+}
+
+.survey {
+  background-color: #f1f8e9;
+}
+
+.configurator {
+  background-color: #f9fbe7;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #000;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+  margin: 30px;
+}
+
+.footer-section h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-section input[type="text"],
+.footer-section input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+}
+
+.footer-section input[type="text"]::placeholder,
+.footer-section input[type="email"]::placeholder {
+  color: #999;
+}
+
+.footer-bottom {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  border-top: 1px solid #333;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 12px;
+}
+
+

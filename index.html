@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C'est La Vie</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-left">
+                <a href="#" class="header-link">+ Contact Us</a>
+            </div>
+            <div class="header-center">
+                <a href="#" class="logo">C'est La Vie</a>
+            </div>
+            <div class="header-right">
+                <a href="#" class="header-icon"><img src="C:\Users\UseR\Documents\html\2nd pjorct\icon\icons8-shopaholic-100.png" alt="Shopping Bag"></a>
+                <a href="#" class="header-icon user-icon"><img src="C:\Users\UseR\Documents\html\2nd pjorct\icon\icons8-person-100.png" alt="User" id="userIcon"></a>
+                <a href="#" class="header-icon"><img src="C:\Users\UseR\Documents\html\2nd pjorct\icon\icons8-search-100.png" alt="Search"></a>
+                <a href="#" class="header-icon"><img src="C:\Users\UseR\Documents\html\2nd pjorct\icon\icons8-menu-100.png" alt="Menu"> Menu</a>
+            </div>
+        </div>
+    </header>
+
+    <div id="loginRegisterModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-tabs">
+                <button id="loginTab" class="tab active">Login</button>
+                <button id="registerTab" class="tab">Register</button>
+            </div>
+            <div id="loginForm" class="form-content active">
+                <h2>Login</h2>
+                <form>
+                    <label for="loginUsername">Username</label>
+                    <input type="text" id="loginUsername" name="username" placeholder="Username" required>
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" name="password" placeholder="Password" required>
+                    <button type="submit" class="btn">Login</button>
+                </form>
+            </div>
+            <div id="registerForm" class="form-content">
+                <h2>Register</h2>
+                <form>
+                    <label for="registerUsername">Username</label>
+                    <input type="text" id="registerUsername" name="username" placeholder="Username" required>
+                    <label for="registerPassword">Password</label>
+                    <input type="password" id="registerPassword" name="password" placeholder="Password" required>
+                    <label for="registerRetypePassword">Retype Password</label>
+                    <input type="password" id="registerRetypePassword" name="retype_password" placeholder="Retype Password" required>
+                    <button type="submit" class="btn">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="searchBar" class="search-bar">
+      <input type="text" placeholder="Search...">
+      <button id="closeSearch" class="close-search">Close</button>
+  </div>
+
+    <section class="hero">
+        <div class="video-container">
+            <video autoplay loop muted class="background-video">
+                <source src="C:\Users\UseR\Documents\html\2nd pjorct\video\cest\cest.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="hero-content">
+          <h1>Welcome to C'est La Vie</h1>
+          <p>Embrace the essence of life's beauty</p>
+          <a href="#productHighlights" class="btn">Explore Now</a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+<section class="product-highlights">
+  <div class="container">
+    <div class="highlight" id="highlight1">
+      <div class="highlight-content">
+        <img src="C:\Users\UseR\Documents\html\2nd pjorct\image\71R2S16hYTL.jpg" alt="Product 1" class="highlight-image">
+        <h3>Own your moment</h3>
+        <p> Own Your Moment with our Stunning Modern Collection.</p>
+      </div>
+    </div>
+    <div class="highlight" id="highlight2">
+      <div class="highlight-content">
+        <img src="C:\Users\UseR\Documents\html\2nd pjorct\image\77b29ff139f2c076f38058caeebf4da3.jpg" alt="Product 2" class="highlight-image">
+        <h3>Rediscover Tradition</h3>
+        <p>Indulge in the Rich Heritage of our Ethnic Dress Collection.</p>
+      </div>
+    </div>
+    <div class="highlight" id="highlight3">
+      <div class="highlight-content">
+        <img src="C:\Users\UseR\Documents\html\2nd pjorct\image\Neer - Extra small.jpeg" class="highlight-image">
+        <h3>Stay Cool, Stay Stylish</h3>
+        <p>Unveil the Trendiest Men's Cool Dress-Up Collection.</p>
+      </div>
+    </div>
+    <div class="highlight" id="highlight4">
+      <div class="highlight-content">
+        <img src="C:\Users\UseR\Documents\html\2nd pjorct\image\Men’s YMC Designers _ Shop at MATCHES.jpeg" alt="Product 4" class="highlight-image">
+        <h3>Elevate Your Summer Style</h3>
+        <p>Discover the Ultimate Men's Collection for Adventures.</p>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+  
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engaging Content Section</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section class="engaging-content">
+      <div class="container">
+        <h2>Fashion Finds</h2>
+        <div class="content-items"> <article class="content-item">  <img src="C:\Users\UseR\Documents\html\2nd pjorct\image\download.jpeg" alt="Image 1">
+            <h3>Mix and Match Textures</h3>
+            <p>Experiment with different textures in your outfits to add depth and visual interest. For example, pair a chunky knit sweater with a sleek leather skirt for a chic contrast.</p>
+          </article>
+          <article class="content-item">
+            <img src="C:\Users\UseR\Documents\html\2nd pjorct\image\watches.jpeg" alt="Image 2">
+            <h3>Elegant Timepieces</h3>
+            <p>Enhance Your Style with Classic Elegance: Elevate Your Wardrobe with Timeless Watches Inspired by Vintage Designs, Adding a Touch of Sophistication to Every Moment.</p>
+          </article>
+          <article class="content-item">
+            <img src="C:\Users\UseR\Documents\html\2nd pjorct\image\download (1).jpeg" alt="Image 3">
+            <h3>Vintage-Inspired Accessories</h3>
+            <p>Incorporate vintage-inspired accessories into your outfits for a touch of nostalgia. Think cat-eye sunglasses, pearl hair clips, or retro handbags to add a unique flair to your style.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </body>
+  </html>
+  
+  
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Elements Section</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section class="interactive-elements">
+      <div class="container">
+       
+        <div class="interactive-items">
+          <article class="interactive-item">
+            <div class="interactive-content quiz">
+              <h3>Take a Quiz</h3>
+              <p>Test your knowledge with our interactive quizzes!</p>
+              <a href="#" class="btn">Start Quiz</a>
+            </div>
+          </article>
+          <article class="interactive-item">
+            <div class="interactive-content survey">
+              <h3>Participate in a Survey</h3>
+              <p>Share your opinions and feedback with us through surveys!</p>
+              <a href="#" class="btn">Take Survey</a>
+            </div>
+          </article>
+          <article class="interactive-item">
+            <div class="interactive-content configurator">
+              <h3>Try our Product Configurator</h3>
+              <p>Customize and personalize your products with our configurator!</p>
+              <a href="#" class="btn">Configure Now</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </body>
+  </html>
+  
+  
+<section class="testimonials">
+  <div class="container">
+    <div class="testimonial">
+      <img src="C:\Users\UseR\Documents\html\2nd pjorct\icon\rating (1).png" alt="Testimonial 1">
+      <p>"Amazing quality and great customer service!"</p>
+      <cite>- John Doe</cite>
+    </div>
+    <div class="testimonial">
+      <img src="C:\Users\UseR\Documents\html\2nd pjorct\icon\rating.png" alt="Testimonial 2">
+      <p>"I'm impressed by the attention to detail in every product."</p>
+      <cite>- Jane Doe</cite>
+    </div>
+    <div class="testimonial">
+      <img src="C:\Users\UseR\Documents\html\2nd pjorct\icon\rating (1).png" alt="Testimonial 3">
+      <p>"Exceptional experience! Proin vel tortor vitae risus volutpat convallis."</p>
+      <cite>- Alex Smith</cite>
+    </div>
+  </div>
+</section>
+
+  <section class="usp">
+    <div class="container">
+      <h2 class="usp-title">Why Choose Us?</h2>
+    </div>
+    <div class="usp-reasons">
+      <article class="usp-item">
+        <i class="fas fa-shipping-fast"></i>
+        <div class="usp-text-box">
+          <h3>Fast Shipping</h3>
+        </div>
+      </article>
+      <article class="usp-item">
+        <i class="fas fa-headphones-alt"></i>
+        <div class="usp-text-box">
+          <h3>24/7 Customer Support</h3>
+        </div>
+      </article>
+      <article class="usp-item">
+        <i class="fas fa-money-bill-wave"></i>
+        <div class="usp-text-box">
+          <h3>100% Money Back Guarantee</h3>
+        </div>
+      </article>
+    </div>
+  </section>
+  
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Footer Interface</title>
+      <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+      <footer>
+          <div class="footer-section">
+              <h4>May We Help You?</h4>
+              <ul>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">My Order</a></li>
+                  <li><a href="#">FAQs</a></li>
+                  <li><a href="#">Email Unsubscribe</a></li>
+                  <li><a href="#">Sitemap</a></li>
+              </ul>
+          </div>
+          <div class="footer-section">
+              <h4>The Company</h4>
+              <ul>
+                  <li><a href="#">About C'est La Vie</a></li>
+                  <li><a href="#">C'est La Vie Equilibrium</a></li>
+                  <li><a href="#">Code of Ethics</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Legal</a></li>
+                  <li><a href="#">Privacy & Cookie Policy</a></li>
+                  <li><a href="#">Corporate Information</a></li>
+              </ul>
+          </div>
+          <div class="footer-section">
+              <h4>Store Locator</h4>
+              <input type="text" placeholder="Country/Region, City">
+          </div>
+          <div class="footer-section">
+              <h4>Sign Up For Updates</h4>
+              <p>By entering your email address below, you consent to receiving our newsletter with access to our latest collections, events and initiatives. More details on this are provided in our <a href="#">Privacy Policy</a>.</p>
+              <input type="email" placeholder="Email">
+          </div>
+          <div class="footer-section">
+              <h4>Country/Region</h4>
+              <p>Bangladesh</p>
+          </div>
+          <div class="footer-section">
+              <h4>C'est La Vie Services</h4>
+              <ul>
+                  <li><a href="#">Discover Our Services</a></li>
+                  <li><a href="#">Book an Appointment</a></li>
+                  <li><a href="#">Collect In Store</a></li>
+              </ul>
+          </div>
+          <div class="footer-bottom">
+              <p>© 2023 - 2024 C'est La Vie S.p.A. - All rights reserved. SIAE LICENCE # 2294/I/1936 and 5647/I/1936</p>
+          </div>
+      </footer>
+  </body>
+  </html>
+  
+  
